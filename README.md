@@ -1,6 +1,10 @@
 # k8s-nti-lab4
 1- How many ConfigMaps exist in the environment?
-
+```
+kubectl get configmap
+NAME                DATA   AGE
+kube-root-ca.crt    1      11d
+```
 2- Create a new ConfigMap Use the spec given below.
 
 ConfigName Name: webapp-config-map
@@ -10,7 +14,9 @@ Data: APP COLOR=darkblue
 3- Create a webapp-color POD with nginx image and use the created ConfigMap
 
 4- How many secrets exist on the system?
-
+```
+0
+```
 5- How many secrets are defined in the default-token secret?
 
 6- create a POD called db-pod with the image mysql 5.7 then check the POD status
